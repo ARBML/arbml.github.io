@@ -1,0 +1,62 @@
+body {
+  font-family: "Montserrat";
+  background: white !important;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.arbml-color {
+  background-color: #f95959;
+}
+.center {
+  text-align: center;
+}
+.lead {
+  font-size: 25px;
+  font-weight: 400;
+}
+.nav-item {
+  font-size: large;
+  color: black;
+}
+.maxHeight {
+  min-height: 255px;
+  max-height: 250px;
+}
+
+.heading-bold-900 {
+  font-weight: 900;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+.project-card {
+  min-height: 300px;
+}
+.card-link {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.collaborator-img-container {
+  width: 450px;
+  text-align: center;
+  vertical-align: middle;
+}
+#navbarNavAltMarkup {
+  margin-left: 1.5em;
+}
