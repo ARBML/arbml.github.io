@@ -23,6 +23,10 @@ body {
 .center {
   text-align: center;
 }
+
+.right {
+  float: right;
+}
 .lead {
   font-size: 25px;
   font-weight: 400;
@@ -59,4 +63,15 @@ body {
 }
 #navbarNavAltMarkup {
   margin-left: 1.5em;
+}
+.mr-2 {
+  margin-right: 2px;
+}
+.btn-color {
+  background-color: #d2eb65;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
