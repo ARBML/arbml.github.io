@@ -1,0 +1,20 @@
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+body {
+    top: 0px !important; 
+    overflow-x: hidden;
+    }
+.translate-btn{
+    background-color: #f95959;
+    border-radius: 5px;
+}
+nav{
+    text-align: center;
+}
+.nav-item-wrapper{
+    margin-left: auto;
+}
+.ar-text{
+    direction: rtl;
+}
