@@ -33,19 +33,28 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                <div class="nav-item-wrapper">
                   <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item mt-2">
-                     <a class="nav-item nav-link" href="publication.html">Publications</a>
+                  <li class="nav-item">
+                     <a class="nav-item nav-link" href="publication.html" id="publications">Publications</a>
                   </li>
 
-                  <li class="nav-item mt-2">
-                     <a class="nav-item nav-link" href="talks.html">Talks</a>
+                  <li class="nav-item">
+                     <a class="nav-item nav-link" href="talks.html" id="talks">Talks</a>
                   </li>
 
-                  <li class="nav-item ml-auto   ">
+                  <!-- <li class="nav-item ml-auto">
                      <div class="p-2 translate">
                         <span id="google_translate" ></span>
                      </div>
-                  </li>
+                  </li> -->
+                  <div class="dropdown nav-item translate-btn">
+                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="translate_btn">
+                       Translate website
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#ar" id="ar" reload>Arabic</a></li>
+                       <li><a class="dropdown-item" href="#en" id="en" reload>English</a></li>
+                     </ul>
+                   </div>
                 </ul>
                </div>
                 
@@ -53,222 +62,225 @@
             </div>
           </nav>
 
-         <section class="py-5 arbml-color ">
-            <div class="row py-lg-5">
-               <div class="col-lg-8 col-md-8 mx-auto text-center">
-                  <h1 class="heading-bold-900">ARBML</h1>
-                  <p class="lead m-4">ARBML is a community of researchers working on Arabic NLP research and development. Although we come from different walks of life, we all strive to achieve one goal: empowering our beloved language with open-source Arabic tools and applications </p>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="album py-5 text-center m-4">
-               <div class="container">
-                  <div class="row align-items-center ">
-                     <h2 class="font-weight-800" >  Mission  </h2>
-                     <h5>  Our mission is to democratize Arabic NLP research and development through open research and collaboration  </h5>
+          <div id="ss">
+            <section class="py-5 arbml-color ">
+               <div class="row py-lg-5">
+                  <div class="col-lg-8 col-md-8 mx-auto text-center">
+                     <h1 class="heading-bold-900 ">ARBML</h1>
+                     <p class="lead m-4" id="hero_text">ARBML is a community of researchers working on Arabic NLP research and development. Although we come from different walks of life, we all strive to achieve one goal: empowering our beloved language with open-source Arabic tools and applications </p>
                   </div>
                </div>
-            </div>
-         </section>
-         <section>
-            <div class="text-center m-4">
-               <div class="row align-items-center">
-                  <div class="col-12">
-                     <h2 class="font-weight-800"> Highlighted Projects</h2>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <img src="assets/imgs/masader.jpg" class="card-img-top img-fluid rounded maxHeight" alt="...">
-                     <div class="card-body project-card">
-                        <h5 class="card-title">Masader 
-                           <a href="https://t.co/rGIpZGyWlJ" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
-                           <a href="https://github.com/ARBML/masader" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
-                           <a href="https://arbml.github.io/masader/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa  fa-globe"></i> Web</a>       
-                        </h5>
-                        <p class="card-text mt-4">
-                           The largest public catalogue for Arabic NLP and speech datasets. There are +500 datasets annotated with more than 25 attributes.
-                        </p>
+            </section>
+            <section>
+               <div class="album py-5 text-center m-4">
+                  <div class="container">
+                     <div class="row align-items-center ">
+                        <h2 class="font-weight-800" id="mission">  Mission  </h2>
+                        <h5 id="mission_text">  Our mission is to democratize Arabic NLP research and development through open research and collaboration  </h5>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <img src="assets/imgs/klaam.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
-                     <div class="card-body project-card">
-                        <h5 class="card-title"> Klaam 
-                           <a href="https://github.com/ARBML/klaam" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
-                        </h5>
-                        <p class="card-text mt-4">
-                           Arabic speech recognition, classification and text-to-speech library.
-                        </p>
+            </section>
+            <section>
+               <div class="text-center m-4">
+                  <div class="row align-items-center">
+                     <div class="col-12">
+                        <h2 class="font-weight-800" id="highlighted_projects"> Highlighted Projects</h2>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <img src="assets/imgs/calliar-1.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
-                     <div class="card-body project-card">
-                        <h5 class="card-title"> Calliar
-                           <a href="https://arxiv.org/pdf/2106.10745.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
-                           <a href="https://github.com/ARBML/calliar" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
-                           <a href="http://calliar.arbml.org/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa  fa-globe"></i> Web</a> 
-                        </h5>
-                        <p class="card-text mt-4">
-                           A dataset for online Arabic calligraphy. A collection of 2500 annotated calligraphic styles.    
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <img src="assets/imgs/quafii.jpg" class="card-img-top img-fluid rounded maxHeight" alt="...">
-                     <div class="card-body project-card">
-                        <h5 class="card-title"> Qawafi 
-                           <a href="https://github.com/ARBML/qawafi" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
-                        </h5>
-                        <p class="card-text mt-4">
-                           Platform for Arabic Poetry Analysis using knowledge-based and deep learning approaches.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <div class="media">
-                        <img  src="assets/imgs/tkseem.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
+            </section>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <img src="assets/imgs/masader.jpg" class="card-img-top img-fluid rounded maxHeight" alt="...">
                         <div class="card-body project-card">
-                           <h5 class="card-title"> tkseem 
-                           <a href="https://arxiv.org/pdf/2106.07540.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
-                           <a href="https://github.com/ARBML/tkseem" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                           <h5 class="card-title" id="masader">Masader 
+                              <a href="https://t.co/rGIpZGyWlJ" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
+                              <a href="https://github.com/ARBML/masader" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                              <a href="https://arbml.github.io/masader/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa  fa-globe"></i> Web</a>       
                            </h5>
-                           <p class="card-text mt-4">
-                              Arabic Tokenization Library. It provides many tokenization algorithms.      
+                           <p class="card-text mt-4" id="masader_text">
+                              The largest public catalogue for Arabic NLP and speech datasets. There are +500 datasets annotated with more than 25 attributes.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <img src="assets/imgs/klaam.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
+                        <div class="card-body project-card">
+                           <h5 class="card-title" id="klaam"> Klaam 
+                              <a href="https://github.com/ARBML/klaam" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                           </h5>
+                           <p class="card-text mt-4" id="klaam_text">
+                              Arabic speech recognition, classification and text-to-speech library.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <img src="assets/imgs/calliar-1.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
+                        <div class="card-body project-card">
+                           <h5 class="card-title" id="calliar"> Calliar
+                              <a href="https://arxiv.org/pdf/2106.10745.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
+                              <a href="https://github.com/ARBML/calliar" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                              <a href="http://calliar.arbml.org/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa  fa-globe"></i> Web</a> 
+                           </h5>
+                           <p class="card-text mt-4" id="calliar_text">
+                              A dataset for online Arabic calligraphy. A collection of 2500 annotated calligraphic styles.    
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <img src="assets/imgs/quafii.jpg" class="card-img-top img-fluid rounded maxHeight" alt="...">
+                        <div class="card-body project-card">
+                           <h5 class="card-title" id="qawafi"> Qawafi 
+                              <a href="https://github.com/ARBML/qawafi" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                           </h5>
+                           <p class="card-text mt-4" id="qawafi_text">
+                              Platform for Arabic Poetry Analysis using knowledge-based and deep learning approaches.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <div class="media">
+                           <img  src="assets/imgs/tkseem.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
+                           <div class="card-body project-card">
+                              <h5 class="card-title" id="tkseem"> tkseem 
+                              <a href="https://arxiv.org/pdf/2106.07540.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
+                              <a href="https://github.com/ARBML/tkseem" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                              </h5>
+                              <p class="card-text mt-4" id="tkseem_text">
+                                 Arabic Tokenization Library. It provides many tokenization algorithms.      
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                     <div class="card">
+                        <img src="assets/imgs/arbml-logo.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
+                        <div class="card-body project-card">
+                           <h5 class="card-title"> ARBML 
+                           <a href="https://aclanthology.org/2020.nlposs-1.2.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
+                           <a href="https://github.com/ARBML/ARBML" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
+                           <a href="https://arbml.github.io/ARBML/Interfaces/Website/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Web</a>   
+                           </h5>
+                           <p class="card-text mt-4" id="arbml_text">
+                              Implementation of many Arabic NLP and CV projects. Providing real time experience using many interfaces like web, command line and notebooks.   
                            </p>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
-                  <div class="card">
-                     <img src="assets/imgs/arbml-logo.png" class="card-img-top img-fluid rounded maxHeight" alt="...">
-                     <div class="card-body project-card">
-                        <h5 class="card-title"> ARBML 
-                        <a href="https://aclanthology.org/2020.nlposs-1.2.pdf" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-file"></i> Paper</a>
-                        <a href="https://github.com/ARBML/ARBML" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Code</a>
-                        <a href="https://arbml.github.io/ARBML/Interfaces/Website/" target="_blank" class="btn btn-color btn-sm right mr-2"><i class="fa fa-github"></i> Web</a>   
-                        </h5>
-                        <p class="card-text mt-4">
-                           Implementation of many Arabic NLP and CV projects. Providing real time experience using many interfaces like web, command line and notebooks.   
-                        </p>
+            </div>
+            <!-- news -->
+            <section class="mt-5">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12 mt-4 text-center ">
+                        <h2 class="font-weight-800" id="news"> News </h2>
+                     </div>
+                     <div class="row mt-5">
+                        <div class="col-10 offset-1">
+                           <ul>
+                                 <li>
+                                 <h5 id="news_body_one"> Masader Plus website is up and running <a href="https://t.co/wshk9tMAvC" target="_blank">here</a>.</h5>
+                                 </li>
+   
+                                 <li>
+                                    <h5 id="news_body_two"> We launched Masader hackathon on the 10 June to 20 June on our discord in collaboration with HuggingFace.
+                                    </h5>
+                                 </li>
+   
+                                 <li>
+                                  <h5 id="news_body_three"> Masader highlighted in <a href="https://www.washingtonpost.com/technology/2022/07/21/big-science-ai-open-source-language-model/" target="_blank">The Washington Post </a>. </h5>
+                                 </li>
+   
+                                 <li>
+                                    <h5 id="news_body_four"> MIT Techonology Review wrote a <a href="https://technologyreview.ae/%D9%86%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A3%D9%87%D9%85-%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5-2/" target="_blank"> post</a>  about our project Calliar. </h5>
+                                 </li>
+                                 
+                                 
+                           </ul>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </div>
-         <!-- news -->
-         <section class="mt-5">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12 mt-4 text-center ">
-                     <h2 class="font-weight-800"> News </h2>
-                  </div>
-                  <div class="row mt-5">
+            </section>
+            <section class="arbml-color-2">
+               <div class="container">
+                  <div class="row mt-5 text-center">
                      <div class="col-10 offset-1">
-                        <ul>
-                              <li>
-                              <h5> Masader Plus website is up and running <a href="https://t.co/wshk9tMAvC" target="_blank">here</a>.</h5>
-                              </li>
-
-                              <li>
-                                 <h5> We launched Masader hackathon on the 10 June to 20 June on our discord in collaboration with HuggingFace.
-                                 </h5>
-                              </li>
-
-                              <li>
-                               <h5> Masader highlighted in <a href="https://www.washingtonpost.com/technology/2022/07/21/big-science-ai-open-source-language-model/" target="_blank">The Washington Post </a>. </h5>
-                              </li>
-
-                              <li>
-                                 <h5> MIT Techonology Review wrote a <a href="https://technologyreview.ae/%D9%86%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A3%D9%87%D9%85-%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5-2/" target="_blank"> post</a>  about our project Calliar. </h5>
-                              </li>
-                              
-                              
-                        </ul>
+                        <h2 class="font-weight-800 mt-25" id="join_our_community"> Join our Community</h2>
+                        <div class="table-responsive">
+                        <table class="table mt-5 ">
+                           <tbody>
+                              <tr>
+                                 <td><img class="member_img" src="https://github.com/unifoliatus.png?"></td>
+                                 <td><img class="member_img" src="https://github.com/yousef337.png"></td>
+                                 <td><img class="member_img" src="https://github.com/AliOsm.png"></td>
+                                 <td><img class="member_img" src="https://github.com/zaidalyafeai.png"></td>
+                                 <td><img class="member_img" src="https://github.com/eaalghamdi.png?"></td>
+                                 <td><img class="member_img" src="https://github.com/sudomaze.png"></td>
+                                 <td><img class="member_img" src="https://github.com/MagedSaeed.png"></td>
+                                 <td><img class="member_img" src="https://github.com/mosaibah.png"></td>
+                              </tr>
+                              <tr>
+                                 <td><img class="member_img" src="https://github.com/BSA10.png"></td>
+                                 <td><img class="member_img" src="https://github.com/alonemazin.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+   
+                              </tr>
+                              <tr>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+                                 <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
+           
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
-         <section class="arbml-color-2">
-            <div class="container">
-               <div class="row mt-5 text-center">
-                  <div class="col-10 offset-1">
-                     <h2 class="font-weight-800 mt-25"> Join our Community</h2>
-                     <div class="table-responsive">
-                     <table class="table mt-5 ">
-                        <tbody>
-                           <tr>
-                              <td><img class="member_img" src="https://github.com/unifoliatus.png?"></td>
-                              <td><img class="member_img" src="https://github.com/yousef337.png"></td>
-                              <td><img class="member_img" src="https://github.com/AliOsm.png"></td>
-                              <td><img class="member_img" src="https://github.com/zaidalyafeai.png"></td>
-                              <td><img class="member_img" src="https://github.com/eaalghamdi.png?"></td>
-                              <td><img class="member_img" src="https://github.com/sudomaze.png"></td>
-                              <td><img class="member_img" src="https://github.com/MagedSaeed.png"></td>
-                              <td><img class="member_img" src="https://github.com/mosaibah.png"></td>
-                           </tr>
-                           <tr>
-                              <td><img class="member_img" src="https://github.com/BSA10.png"></td>
-                              <td><img class="member_img" src="https://github.com/alonemazin.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-
-                           </tr>
-                           <tr>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-                              <td><img class="member_img" src="assets/imgs/github_profile.png"></td>
-        
-                           </tr>
-                        </tbody>
-                     </table>
+            </section>
+            <section>
+               <div class="text-center mt-5">
+                  <div class="row">
+                     <div class="col-12">
+                        <h2 class="font-weight-800" id="collaborators"> Collaborators </h2>
+                     </div>
+                     <div class="row justify-content-center">
+                        <div class="mt-4 collaborator-img-container">
+                           <img src="assets/imgs/HF.png"..." height="120">
+                        </div>
+                        <div class="mt-4 collaborator-img-container">
+                           <img src="assets/imgs/BigScience.png"... " height="120">
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
-         <section>
-            <div class="text-center mt-5">
-               <div class="row">
-                  <div class="col-12">
-                     <h2 class="font-weight-800"> Collaborators </h2>
-                  </div>
-                  <div class="row justify-content-center">
-                     <div class="mt-4 collaborator-img-container">
-                        <img src="assets/imgs/HF.png"..." height="120">
-                     </div>
-                     <div class="mt-4 collaborator-img-container">
-                        <img src="assets/imgs/BigScience.png"... " height="120">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
+            </section>
+          </div>
+         
          <!-- Collaborators -->
       </main>
       <div class="container">
@@ -289,7 +301,6 @@
       <!-- Google translate file link -->
       <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       <script src="js/index.js"></script>
-
    </body>
 </html>
 
