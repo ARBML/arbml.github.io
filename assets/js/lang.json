@@ -22,12 +22,18 @@
         "tkseem_text":"مكتبة التقطيع العربية التي توفر العديد من خوارزميات التقطيع.",
         "arbml_text":"تطوير العديد من المشاريع في مجال معالجة اللغة العربية وكذلك التعرف على الصور،  مع توفير واجهات لحظية للتفاعل مع هذه المشاريع",
         "news":"أخبار",
+        "code": "شفرة",
+        "paper": "ورقة بحثية",
+        "web": "موقع",
         "news_body": [
             "موقع مصادر بلس متوفر حالياً أونلاين ",
             "بدأنا مصادر هاكاثون في 10 من يونيو على الديسكور بالتعاون مع HuggingFace",
             "تم الإشارة إلى مصادر في هذا المقال من واشنطن بوست ",
-            "MIT Technology review كتبت مقال عن كاليار هنا "
+            ["كتب MIT Technology Review أ", "ean mashrueina Calliar"]
         ],
+        "news_body_one_link": "هنا",
+        "news_body_three_link": "صحيفة واشنطن بوست",
+        "news_body_four_link": "بريد",
         "join_our_community":"انضم إلى مجتمعنا",
         "collaborators":"جهات التعاون "
     },
@@ -54,12 +60,18 @@
         "tkseem_text":"Arabic Tokenization Library. It provides many tokenization algorithms.",
         "arbml_text":"Implementation of many Arabic NLP and CV projects. Providing real time experience using many interfaces like web, command line and notebooks.",
         "news":"News",
+        "code": "Code",
+        "paper": "Paper",
+        "web": "Web",
         "news_body": [
-            "Masader Plus website is up and running here.",
+            "Masader Plus website is up and running",
             "We launched Masader hackathon on the 10 June to 20 June on our discord in collaboration with HuggingFace.",
-            "Masader highlighted in The Washington Post .",
-            "MIT Techonology Review wrote a post about our project Calliar."
+            "Masader highlighted in ",
+            ["MIT Techonology Review wrote a", "  about our project Calliar."]
         ],
+        "news_body_one_link": "here.",
+        "news_body_three_link": "The Washington Post . ",
+        "news_body_four_link": "post",
         "join_our_community":"Join our Community",
         "collaborators": "Collaborators"
     }

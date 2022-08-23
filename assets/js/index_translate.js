@@ -7,7 +7,13 @@ let fetchLang = async () => {
 
   let ar = document.querySelector("#ar");
   let en = document.querySelector("#en");
-  let ar_style = document.getElementById("ar_style");
+  let ar_style = document.querySelector("#ar_style");
+
+  let paper = document.querySelectorAll('.paper');
+  let code = document.querySelectorAll('.code');
+  let web = document.querySelectorAll('.web');
+
+  news_body_four_link.innerHTML = "post";
 
   ar.addEventListener("click", () => {
     translate_btn.innerHTML = "Arabic";
@@ -33,9 +39,25 @@ let fetchLang = async () => {
     news_body_one.innerHTML = data.ar.news_body[0];
     news_body_two.innerHTML = data.ar.news_body[1];
     news_body_three.innerHTML = data.ar.news_body[2];
-    news_body_four.innerHTML = data.ar.news_body[3];
+    news_body_four1.innerHTML = data.ar.news_body[3][0];
+    news_body_four2.innerHTML = data.ar.news_body[3][1];
+    news_body_one_link.innerHTML = data.ar.news_body_one_link;
+    news_body_three_link.innerHTML = data.ar.news_body_three_link;
+    news_body_four_link.innerHTML = data.ar.news_body_four_link;
     join_our_community.innerHTML = data.ar.join_our_community;
     collaborators.innerHTML = data.ar.collaborators;
+
+    for (let i = 0; i < paper.length; i++) {
+      paper[i].innerHTML = data.ar.paper
+    }
+
+    for (let i = 0; i < code.length; i++) {
+      code[i].innerHTML = data.ar.code
+    }
+
+    for (let i = 0; i < web.length; i++) {
+      web[i].innerHTML = data.ar.web
+    }
 
     ar_style.classList.add("ar-text");
   });
@@ -60,13 +82,34 @@ let fetchLang = async () => {
     tkseem.innerHTML = data.en.tkseem;
     tkseem_text.innerHTML = data.en.tkseem_text;
     arbml_text.innerHTML = data.en.arbml_text;
+    paper.innerHTML = data.en.paper;
+    code.innerHTML = data.en.code;
+    web.innerHTML = data.en.web;
     news.innerHTML = data.en.news;
     news_body_one.innerHTML = data.en.news_body[0];
     news_body_two.innerHTML = data.en.news_body[1];
     news_body_three.innerHTML = data.en.news_body[2];
-    news_body_four.innerHTML = data.en.news_body[3];
+    news_body_four1.innerHTML = data.en.news_body[3][0];
+    news_body_four2.innerHTML = data.en.news_body[3][1];
+    news_body_one_link.innerHTML = data.en.news_body_one_link;
+    news_body_three_link.innerHTML = data.en.news_body_three_link;
+    news_body_four_link.innerHTML = data.en.news_body_four_link;
     join_our_community.innerHTML = data.en.join_our_community;
     collaborators.innerHTML = data.en.collaborators;
+
+    for (let i = 0; i < paper.length; i++) {
+      paper[i].innerHTML = data.en.paper
+    }
+
+    for (let i = 0; i < code.length; i++) {
+      code[i].innerHTML = data.en.code
+    }
+
+    for (let i = 0; i < web.length; i++) {
+      web[i].innerHTML = data.en.web
+    }
+
+
 
     ar_style.classList.remove("ar-text");
   });
