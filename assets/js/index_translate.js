@@ -39,8 +39,7 @@ let fetchLang = async () => {
     news_body_one.innerHTML = data.ar.news_body[0];
     news_body_two.innerHTML = data.ar.news_body[1];
     news_body_three.innerHTML = data.ar.news_body[2];
-    news_body_four1.innerHTML = data.ar.news_body[3][0];
-    news_body_four2.innerHTML = data.ar.news_body[3][1];
+    news_body_four1.innerHTML = data.ar.news_body[3];
     news_body_one_link.innerHTML = data.ar.news_body_one_link;
     news_body_three_link.innerHTML = data.ar.news_body_three_link;
     news_body_four_link.innerHTML = data.ar.news_body_four_link;
@@ -89,8 +88,7 @@ let fetchLang = async () => {
     news_body_one.innerHTML = data.en.news_body[0];
     news_body_two.innerHTML = data.en.news_body[1];
     news_body_three.innerHTML = data.en.news_body[2];
-    news_body_four1.innerHTML = data.en.news_body[3][0];
-    news_body_four2.innerHTML = data.en.news_body[3][1];
+    news_body_four1.innerHTML = data.en.news_body[3];
     news_body_one_link.innerHTML = data.en.news_body_one_link;
     news_body_three_link.innerHTML = data.en.news_body_three_link;
     news_body_four_link.innerHTML = data.en.news_body_four_link;
