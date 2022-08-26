@@ -29,11 +29,11 @@
             "موقع مصادر بلس متوفر حالياً أونلاين ",
             "بدأنا مصادر هاكاثون في 10 من يونيو على الديسكور بالتعاون مع HuggingFace",
             "تم الإشارة إلى مصادر في هذا المقال من واشنطن بوست ",
-            ["كتب MIT Technology Review أ", "ean mashrueina Calliar"]
+            "كتبت MIT Technology Review مقال عن كاليار في النشرة"
         ],
         "news_body_one_link": "هنا",
         "news_body_three_link": "صحيفة واشنطن بوست",
-        "news_body_four_link": "بريد",
+        "news_body_four_link": "البريدية",
         "join_our_community":"انضم إلى مجتمعنا",
         "collaborators":"جهات التعاون "
     },
