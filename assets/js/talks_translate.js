@@ -10,7 +10,7 @@ let fetchLang = async () => {
     let ar_style = document.getElementById("ar_style");
   
     ar.addEventListener("click", () => {
-      translate_btn.innerHTML = "Arabic";
+      // translate_btn.innerHTML = "Arabic";
   
       publications.innerHTML = data.ar.publications;
       talks.innerHTML = data.ar.talks;
@@ -20,7 +20,7 @@ let fetchLang = async () => {
     });
   
     en.addEventListener("click", () => {
-      translate_btn.innerHTML = "English",
+      // translate_btn.innerHTML = "English",
   
       publications.innerHTML = data.en.publications;
       talks.innerHTML = data.en.talks;

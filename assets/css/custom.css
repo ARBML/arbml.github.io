@@ -27,8 +27,14 @@ td {
   margin-left: 5px;
 }
 
+.btn-danger {
+  color: #fff;
+  background-color: #f95858;
+  border-color: #f95858;
+}
+
 .arbml-color {
-  background-color: #f95959;
+  background-image: linear-gradient(to right, #ff6b6b , #efeb5940);
 }
 
 .arbml-color-2 {
