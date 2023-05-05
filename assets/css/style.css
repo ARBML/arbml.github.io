@@ -1,20 +1,29 @@
 body {
-    top: 0px !important; 
+    top: 0px !important;
     overflow-x: hidden;
-    }
-.translate-btn{
+}
+
+.translate-btn {
     background-color: #f95959;
     border-radius: 5px;
 }
-nav{
+
+nav {
     text-align: center;
 }
-.nav-item-wrapper{
+
+.card-img-top {
+    border: 1px solid #e0dcdc;
+}
+
+.nav-item-wrapper {
     margin-left: auto;
 }
-.ar-text{
+
+.ar-text {
     direction: rtl;
 }
-.news{
+
+.news {
     font-size: 20px;
 }
